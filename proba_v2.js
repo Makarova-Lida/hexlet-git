@@ -4,16 +4,21 @@ const three = 'Sand'
 const fruitsCount = -2309
 const number = 923.2238
 const name = 'JavaScript'
+<<<<<<< HEAD
 //const text = 'Never forget what you are, for surely the world will not'
 const motto = 'Family, Duty, Honor'
 let firstName = '  Grigor      \n'
 const name_1 = 'Tirion'
 const text = 'When you play the game, you win even if you don\'t want to win.'
+=======
+const text = 'Never forget what you are, for surely the world will not'
+>>>>>>> 311f52e30713f74a3f87e6d2c6bc0c96aab1a649
 // BEGIN (write your solution here)
 //console.log(one[2] + two[1] + three[3] +two[4] +two[2])
 //console.log(`${one[2]}${two[1]}${three[3]}${two[4]}${two[2]}`)
 //console.log(Math.pow(2, 3))
 //console.log(Math.abs(fruitsCount))
+<<<<<<< HEAD
 //console.log(`First: ${text[0]}\nLast: ${text[55]}`)
 //console.log(Math.min (3, 10, 22, -3, 0))
 //console.log(Math.max (3, 10, 22, -3, 0))
@@ -25,4 +30,10 @@ firstName = firstName.trim()
 console.log(text.slice(5,13).replace("you","someone").length)
 
 //console.log(text.length)
+=======
+//console.log(Math.ceil(number))
+console.log(`First: ${text[0]}\nLast: ${text[55]}`)
+console.log(Math.min (3, 10, 22, -3, 0))
+console.log(Math.max (3, 10, 22, -3, 0))
+>>>>>>> 311f52e30713f74a3f87e6d2c6bc0c96aab1a649
 // END
