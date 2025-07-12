@@ -152,8 +152,8 @@ const getTypeOfSentence = (sentence) => {
   return 'general'
 }
 
-console.log(getTypeOfSentence('Hodor')) 
-console.log(getTypeOfSentence('Hodor?'))
+//console.log(getTypeOfSentence('Hodor')) 
+//console.log(getTypeOfSentence('Hodor?'))
 
 
 
@@ -177,8 +177,8 @@ const getTypeOfSentence1 = (sentence) => {
   // С помощью интерполяции формируем строку
   return `${sentenceType} sentence`
 }
-console.log(getTypeOfSentence1('Hodor')) 
-console.log(getTypeOfSentence1('Hodor?'))
+//console.log(getTypeOfSentence1('Hodor')) 
+//console.log(getTypeOfSentence1('Hodor?'))
 
 const getTypeOfSentence2 = (sentence) => {
   const lastChar = sentence[sentence.length - 1]
@@ -211,5 +211,134 @@ if (adres.startsWith('https://')) {
 
 }
 }
-console.log(normalizeUrl('google.com'))
-console.log(normalizeUrl('https://ai.fi'))
+//console.log(normalizeUrl('google.com'))
+//console.log(normalizeUrl('https://ai.fi'))
+
+const getTypeOfSentenc = (sentence) => {
+  //const lastChar = sentence.slice(-1)
+
+  return (sentence.slice(-1) === '?') ? 'question' : 'normal'
+}
+
+//console.log(getTypeOfSentenc('Hodor'))
+//console.log(getTypeOfSentenc('Hodor?'))
+
+const newText = 'Hello!'
+const convertText = (newText) => {
+  const firstnewText = newText[0]
+  if (newText ==='')    {   return ''  }
+else  {
+if (firstnewText === firstnewText.toUpperCase()) 
+{   return newText}
+ 
+else { return newText.split('').reverse().join('')}
+}
+}
+//console.log(convertText ('Hello'))
+//console.log(convertText ('hello'))
+//console.log(convertText (''))
+
+const f = (count) => {
+  // Объявляем переменную
+  let result
+
+  // Заполняем
+  switch (count) {
+    case 1:
+      result = 'one'
+      break
+    case 2:
+      result = 'two'
+      break
+    default:
+      result = null
+  }
+
+  // Возвращаем
+  return result
+}
+
+//console.log(f(1))
+
+const getNumberExplanation = (count) => {
+  // Объявляем переменную
+  let result
+
+  // Заполняем
+  switch (count) {
+    case 666:
+      result = 'devil number'
+      break
+    case 42:
+      result = 'answer for everything'
+      break
+    case 7:
+      result = 'prime number'
+      break
+    default:
+      result = 'just a number'
+  }
+
+  // Возвращаем
+  return result
+}
+//console.log(getNumberExplanation(8)) // just a number
+//console.log(getNumberExplanation(666)) // devil number
+//console.log(getNumberExplanation(42)) // answer for everything
+//console.log(getNumberExplanation(7)) //prime number
+
+const printNumbers = (lastNumber) => {
+  // i – сокращение от index (порядковый номер)
+  // используется по общему соглашению во множестве языков
+  // как счетчик цикла
+  let i = lastNumber
+
+  while (i >= 1) {
+    console.log(i)
+    i = i - 1
+  }
+  console.log('finished!')
+}
+
+//printNumbers(4)
+
+
+
+const sumNumbersFromRange = (start, finish) => {
+  // Технически можно менять start
+  // Но входные аргументы нужно оставлять в исходном значении
+  // Это сделает код проще для анализа
+  let i = start
+  let sum = 0 // Инициализация суммы
+
+  while (i <= finish) { // Двигаемся до конца диапазона
+    sum = sum + i // Считаем сумму для каждого числа
+    i = i + 1 // Переходим к следующему числу в диапазоне
+  }
+
+  // Возвращаем получившийся результат
+  console.log(sum)
+}
+
+//sumNumbersFromRange(1, 3)
+
+
+//const joinNumbersFromRange = (start, finish) => {
+  // Нейтральный элемент для строк – пустая строка
+  let result = ''
+  let i = start
+
+  while (i <= finish) {
+    // Каждый раз добавляем строку к результату
+    result = `${result}${i}`
+    i = i + 1
+  }
+
+
+return result
+}
+
+console.log(joinNumbersFromRange(1, 3).toString())
+
+
+
